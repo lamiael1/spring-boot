@@ -15,12 +15,12 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    // Método solicitado para calcular la edad [cite: 18]
+    //  calcular la edad
     public int getEdad() {
         return Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
     }
 
-    // Getters y Setters necesarios [cite: 17]
+    // Getters y Setters necesarios
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public String getApellidos() { return apellidos; }
